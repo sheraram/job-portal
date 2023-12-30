@@ -6,8 +6,8 @@ const cors = require("cors");
 const fs = require("fs");
 
 // MongoDB
-mongoose
-  .connect("mongodb://localhost:27017/jobPortal", {
+// .connect("mongodb://localhost:27017/jobPortal", { //  for local Mongo
+  .connect("mongodb+srv://guesser9877:18099483@cluster0.o5sa2n8.mongodb.net/?retryWrites=true&w=majority", { // for mongo atlas
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
