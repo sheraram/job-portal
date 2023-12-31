@@ -6,7 +6,11 @@ const cors = require("cors");
 const fs = require("fs");
 
 // MongoDB
+// mongodb+srv://guesser9877:<password>@cluster0.ucm3oce.mongodb.net/?retryWrites=true&w=majority
+// mongodb+srv://guesser9877:<password>@cluster0.o5sa2n8.mongodb.net/?retryWrites=true&w=majority
+mongoose
 // .connect("mongodb://localhost:27017/jobPortal", { //  for local Mongo
+  // .connect("mongodb+srv://guesser9877:18099483@cluster0.ucm3oce.mongodb.net/jobPortal", { // for mongo atlas
   .connect("mongodb+srv://guesser9877:18099483@cluster0.o5sa2n8.mongodb.net/?retryWrites=true&w=majority", { // for mongo atlas
     useNewUrlParser: true,
     useUnifiedTopology: true,
